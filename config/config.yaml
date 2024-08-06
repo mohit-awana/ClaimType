@@ -5,3 +5,8 @@ data_ingestion:
   source_url: https://drive.google.com/file/d/1ZV6hrS5m4WRmCEZIXM4XHee_1Kl7d84F/view?usp=share_link
   local_data_file: artifacts/data_ingestion/data.zip
   unzip_dir: artifacts/data_ingestion
+
+data_transformation:
+  root_dir: artifacts/data_transformation
+  source_url: artifacts/data_ingestion/claims.xlsx
+  unzip_dir: artifacts/data_transformation/claims_transformed.csv

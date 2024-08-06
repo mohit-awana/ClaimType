@@ -14,3 +14,14 @@ class DataIngestionConfig:
     source_url: str
     local_data_file: Path
     unzip_dir: Path
+
+
+@dataclass(frozen=True)
+class DataTransformationConfig:
+    """
+    DataTransformation is a dataclass that holds the configuration for the data transformation pipeline.
+    """
+
+    root_dir: Path
+    source_url: str
+    unzip_dir: Path
